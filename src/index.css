@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --paper-bg: #fbf9f5;
+    --paper-surface: #f2ede3;
+    --paper-border: #ddd5c7;
+    --ink-primary: #1c1917;
+    --ink-secondary: #57524b;
+    --accent-lapis: #1e3a8a;
+    --accent-brass: #78350f;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--paper-bg);
+    color: var(--ink-primary);
+    font-family: "Noto Sans Devanagari", system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--paper-bg);
+    color: var(--ink-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  .font-editorial {
+    font-family: "Noto Serif Devanagari", Georgia, serif;
+    text-wrap: balance;
+  }
+}
+
+.prose-hindi {
+  font-family: "Noto Serif Devanagari", Georgia, serif;
+}
+
+.drop-cap-hindi::first-letter {
+  font-family: "Noto Serif Devanagari", Georgia, serif;
+  font-size: 3.1rem;
+  font-weight: 700;
+  line-height: 0.9;
+  float: left;
+  margin-right: 0.65rem;
+  margin-top: 0.25rem;
+  color: var(--accent-lapis);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

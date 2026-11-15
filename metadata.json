@@ -1,0 +1,8 @@
+{
+  "name": "रामू चायवाला और असली खजाना",
+  "description": "एक गरीब चायवाले रामू, एक रहस्यमयी मुसाफिर और गाँव के पुराने कुएँ की सचित्र हिन्दी लोककथा।",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
